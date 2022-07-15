@@ -124,7 +124,7 @@ img {
 
 .header-list {
   display: flex;
-  gap: 50px;
+  gap: 30px;
 }
 
 .header-link {
@@ -163,6 +163,19 @@ img {
 .header-contacts:focus {
   color: var(--accent-txt-color);
 }
+
+.headear-item-icons:hover,
+.headear-item-icons:focus {
+  color: var(--accent-txt-color);
+}
+
+.icons-contacts {
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+
+
 /* ========================
 ===========Studio========== 
 ===========================*/
@@ -234,6 +247,23 @@ img {
   width: 270px;
 }
 
+.benefits-box-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+  background-color: var(--light-bg-color);
+}
+
+
+.benefits-icons {
+ 
+  background-color: var(--light-bg-color);
+ 
+}
+
 .advantages-title {
   margin-bottom: 10px;
 
@@ -291,7 +321,7 @@ img {
 
 .team-item-container {
   padding-top: 30px;
-  padding-bottom: 30px;
+ margin-bottom: 16px;
   text-align: center;
 }
 
@@ -306,7 +336,40 @@ img {
 .team-item-txt {
   font-size: 16px;
   line-height: calc(19 / 16);
-  color: var(--paragraph-txt-color);
+  color: var(--paragraph-txt-color); 
+}
+
+.team-box-icons {
+  
+}
+
+.team-list-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.team-link-icons {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  justify-content: center;
+  align-items: center;
+  color: #AFB1B8;
+  background-color: var(--main-bg-color);
+  border-radius: 50%;
+}
+
+.team-link-icons:hover,
+.team-link-icons:focus {
+  color: white;
+  background-color: var(--accent-bg-color);
+} 
+
+.team-icons {
+fill: currentColor
 }
 
 /* ========================
