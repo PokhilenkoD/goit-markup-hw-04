@@ -188,14 +188,15 @@ img {
   padding-right: 0;
   padding-left: 0;
   text-align: center;
-
-  background-image: url(../images/index/hero.jpg);
-  background-repeat: no-repeat;
-  background-position: top right, center;
-  max-width: 1600px;
   margin-right: auto;
   margin-left: auto;
+  max-width: 1600px;
+
+  background-image: linear-gradient(to right, rgb(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/index/hero.jpg);
+  background-repeat: no-repeat;
+  background-position: top right, center;
 }
+
 
 .hero-title {
   margin-top: 0;
