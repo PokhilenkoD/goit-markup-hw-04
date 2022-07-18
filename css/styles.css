@@ -20,6 +20,8 @@
   --header-line-color: #ececec;
   --hero-btn-hover-color: #188ce8;
   --team-item-bg-color: #ffffff;
+  --icons-color: #AFB1B8;
+  --icons-hover-colors: white; 
 }
 
 body {
@@ -124,7 +126,7 @@ img {
 
 .header-list {
   display: flex;
-  gap: 30px;
+  gap: 50px;
 }
 
 .header-link {
@@ -169,6 +171,11 @@ img {
   color: var(--accent-txt-color);
 }
 
+.header-list-contacts {
+  display: flex;
+  gap: 30px;
+}
+
 .icons-contacts {
   margin-right: 10px;
   fill: currentColor;
@@ -185,16 +192,14 @@ img {
   background-color: var(--dark-bg-color);
   padding-top: 200px;
   padding-bottom: 200px;
-  padding-right: 0;
-  padding-left: 0;
-  text-align: center;
   margin-right: auto;
   margin-left: auto;
   max-width: 1600px;
 
   background-image: linear-gradient(to right, rgb(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/index/hero.jpg);
   background-repeat: no-repeat;
-  background-position: top right, center;
+  background-position: center;
+  background-size:cover;
 }
 
 
@@ -329,7 +334,7 @@ img {
 
 .team-item-container {
   padding-top: 30px;
- margin-bottom: 16px;
+  padding-bottom: 30px;
   text-align: center;
 }
 
@@ -345,6 +350,7 @@ img {
   font-size: 16px;
   line-height: calc(19 / 16);
   color: var(--paragraph-txt-color); 
+  margin-bottom: 16px;
 }
 
 
@@ -354,8 +360,7 @@ img {
   justify-content: center;
   align-items: center;
   gap: 10px;
-  margin-bottom: 30px;
-}
+  }
 
 .team-link-icons {
   display: flex;
@@ -363,14 +368,13 @@ img {
   height: 44px;
   justify-content: center;
   align-items: center;
-  color: #AFB1B8;
-  background-color: var(--main-bg-color);
+  color: var(--icons-color);
   border-radius: 50%;
 }
 
 .team-link-icons:hover,
 .team-link-icons:focus {
-  color: white;
+  color: var(--icons-hover-colors);
   background-color: var(--accent-bg-color);
 } 
 
@@ -391,7 +395,7 @@ fill: currentColor
   gap: 30px;
 }
 
-.clients-item {
+.clients-link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -399,13 +403,13 @@ fill: currentColor
   height: 92px;
   border: 1px solid #AFB1B8;
   border-radius: 4px;
-  fill: #AFB1B8;
+  fill: var(--icons-color);
 }
 
-.clients-item:hover {
+.clients-link:hover,
+.clients-link:focus {
   fill: var(--accent-txt-color);
   border: 1px solid var(--accent-txt-color);
-  border-radius: 4px;
 }
 
 /* ========================
@@ -424,8 +428,12 @@ fill: currentColor
 .footer-container {
   display: flex;
   align-items: baseline;
-  gap: 70px;
 }
+
+.footer-addres {
+  margin-right: 70px;
+}
+
 
 .logo-accent-footer {
   color: var(--secondary-txt-color);
@@ -453,9 +461,9 @@ fill: currentColor
   color: var(--secondary-txt-color);
 }
 
+
 .footer-socials-title {
-  font-style: normal;
-  font-size: 14px;
+  font-weight: 700;
   line-height: calc(16 / 14);
   text-transform: uppercase;
   color: var(--secondary-txt-color);
@@ -476,7 +484,7 @@ fill: currentColor
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  background-color: #44454E;
+  background-color: rgba(255, 255, 255, 0.1);
   
   
 }
@@ -515,9 +523,8 @@ fill: #FFFFFF;
   cursor: pointer;
   font-family: var(--main-font);
   border: none;
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
+  letter-spacing: 0.03em;
 }
 
 .portfolio-filter-btn-accent {
@@ -532,20 +539,22 @@ fill: #FFFFFF;
 .portfolio-filter-btn:focus {
   color: var(--secondary-txt-color);
   background-color: var(--accent-bg-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .portfolio-list-container {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-  padding-bottom: 94px;
 }
 
 .portfolio-link {
   display: block;
   }
 
-  .portfolio-link:hover {
+  .portfolio-link:hover,
+  .portfolio-link:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
   }
 
