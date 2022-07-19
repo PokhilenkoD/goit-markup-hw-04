@@ -153,7 +153,8 @@ img {
 .header-contacts {
   padding-top: 32px;
   padding-bottom: 32px;
-  display: block;
+  display: flex;
+  align-items: center;
 
   font-weight: 500;
   line-height: calc(16 / 14);
@@ -403,13 +404,17 @@ fill: currentColor
   height: 92px;
   border: 1px solid #AFB1B8;
   border-radius: 4px;
-  fill: var(--icons-color);
+  color: var(--icons-color);
 }
 
 .clients-link:hover,
 .clients-link:focus {
-  fill: var(--accent-txt-color);
-  border: 1px solid var(--accent-txt-color);
+  color: var(--accent-txt-color);
+  border-color: var(--accent-txt-color);
+}
+
+.clients-icons {
+  fill: currentColor;
 }
 
 /* ========================
@@ -449,11 +454,16 @@ fill: currentColor
   font-style: normal;
   font-weight: 400;
   line-height: calc(24 / 14);
-  color: var(--addres-txt-color);
+  color: var(--secondary-txt-color);
 }
 
 .addres-item:not(:last-child) {
   margin-bottom: 9px;
+}
+
+.addres-item:not(:first-child) {
+  color: var(--addres-txt-color);
+
 }
 
 .footer-contacts:hover,
